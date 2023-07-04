@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="outer-root">
+			<div id="root">
+				<div id="container">
+					<img src="./images/main_bg.jpg" class="lazyload bg-img" />
+					<header>
+						<img src="./images/header_bg.png" class="lazyload bg-img" />
+						<img src="./images/logo.png" id="logo">
+						<nav>
+							<div id="menu-container">
+								<div class="menu-option">
+									<div lang="vi">HỌC VIỆN SULAN</div>
+									<div lang="en">SULAN ACADEMY</div>
+									<div lang="cn">苏澜学院</div>
+								</div>
+								<div class="menu-option">
+									<div lang="vi">THƯ VIỆN NẶN MẶT</div>
+									<div lang="en">CHARACTER GALLERY</div>
+									<div lang="cn">捏脸百科</div>
+								</div>
+								<div class="menu-option">
+									<div lang="vi">NHÀ THÁM HIỂM SƠ CẤP</div>
+									<div lang="en">BEGINNER ADVENTURER</div>
+									<div lang="cn">新手冒险家</div>
+								</div>
+								<div class="menu-option">
+									<div lang="vi">NHÀ THÁM HIỂM CAO CẤP</div>
+									<div lang="en">ADVANCED ADVENTURER</div>
+									<div lang="cn">资深冒险家</div>
+								</div>
+							</div>
+						</nav>
+						<div id="language-select-container">
+							<button id="select-language-button">
+								<div lang="vi">Tiếng Việt</div>
+								<div lang="en">English</div>
+								<div lang="cn">中文</div>
+							</button>
+							<ul id="language-dropdown">
+								<li>
+									<div>English</div>
+								</li>
+								<li selected>
+									<div>Tiếng Việt</div>
+								</li>
+								<li>
+									<div>中文</div>
+								</li>
+							</ul>
+						</div>
+					</header>
+					<div id="left-part">
+						<div class="left-blue" id="sulan-academy-left-blue" hidden>
+							<div class="title-text-container">
+								<div lang="vi" class="small-text">HỌC VIỆN</div>
+								<div lang="vi" class="large-text">SULAN</div>
+								<div lang="en" class="large-text">SULAN</div>
+								<div lang="en" class="small-text">ACADEMY</div>
+								<div lang="cn" class="large-text">苏澜</div>
+								<div lang="cn" class="small-text">学院</div>
+							</div>
+
+							<img src="./images/sulan_academy.png" class="lazyload bg-img"/>
+						</div>
+						<div id="beginner-left-blue" class="left-blue" hidden>
+							<div class="title-text-container">
+								<div lang="vi" class="small-text">NHÀ THÁM HIỂM</div>
+								<div lang="vi"class="large-text">SƠ CẤP</div>
+								<div lang="en" class="large-text">BEGINNER</div>
+								<div lang="en" class="small-text">ADVENTURER</div>
+								<div lang="cn" class="large-text">新手</div>
+								<div lang="cn" class="small-text">冒险家</div>
+							</div>
+
+							<img src="./images/beginner_left_bg.png" class="lazyload bg-img" />
+							<div id="beginner-button-container">
+								<button class="beginner-button">
+									<div lang="vi">CƠ BẢN</div>
+									<div lang="en">BASICS</div>
+									<div lang="cn">基本</div>
+									<span>1</span>
+								</button>
+								<button class="beginner-button">
+									<div lang="vi">CÁ TÍNH</div>
+									<div lang="en">FASHION & STYLE</div>
+									<div lang="cn">百变衣库</div>
+									<span>2</span>
+								</button>
+								<button class="beginner-button">
+									<div lang="vi">KHÁM PHÁ</div>
+									<div lang="en">FANTASY WORLD</div>
+									<div lang="cn">幻美之城</div>
+									<span>3</span>
+								</button>
+								<button class="beginner-button">
+									<div lang="vi">PHIÊU LƯU</div>
+									<div lang="en">ADVENTURES</div>
+									<div lang="cn">冒险之旅</div>
+									<span>4</span>
+								</button>
+								<button class="beginner-button">
+									<div lang="vi">CHIẾN ĐẤU</div>
+									<div lang="en">POWER UP</div>
+									<div lang="cn">竞技场</div>
+									<span>5</span>
+								</button>
+							</div>
+						</div>
+						<div id="advance-left-blue" class="left-blue" hidden>
+							<div class="title-text-container">
+								<div lang="vi" class="small-text">NHÀ THÁM HIỂM</div>
+								<div lang="vi"class="large-text">CAO CẤP</div>
+								<div lang="en" class="large-text">ADVANCED</div>
+								<div lang="en" class="small-text">ADVENTURER</div>
+								<div lang="cn" class="large-text">资深</div>
+								<div lang="cn" class="small-text">冒险家</div>
+							</div>
+							<img src="./images/beginner_left_bg.png" class="lazyload bg-img" />
+							<div id="advance-button-container">
+								<button class="advance-button" selected>
+									<div lang="vi">LỊCH TRÌNH THÁM HIỂM</div>
+									<div lang="en">EXPLORATION GUIDE</div>
+									<div lang="cn">入门手册</div>
+								</button>
+								<button class="advance-button">
+									<div lang="vi">THU THẬP KỶ VẬT</div>
+									<div lang="en">TOKEN COLLECTION</div>
+									<div lang="cn">收集藏品</div>
+								</button>
+								<button class="advance-button">
+									<div lang="vi">TRUY TÌM KHO BÁU</div>
+									<div lang="en">TREASURE HUNT</div>
+									<div lang="cn">神隐宝箱</div>
+								</button>
+								<button class="advance-button">
+									<div lang="vi">DANH LAM THẮNG CẢNH</div>
+									<div lang="en">SCENIC SPOTS</div>
+									<div lang="cn">打卡景点</div>
+								</button>
+							</div>
+						</div>
+						</div>
+						<div id="notebook">
+							<img src="./images/note_bg.png" class="lazyload bg-img" />
+							<section id="hoc-vien-sulan" hidden>
+								<div id="nghe-container">
+									<div lang="vi" class="sulan-title">NGHỀ NGHIỆP</div>
+									<div lang="en" class="sulan-title">JOBS</div>
+									<div lang="cn" class="sulan-title">职业</div>
+
+									<img src="./images/nghe_bg.jpg" class="lazyload bg-img" />
+									<a>
+										<img src="./images/nghe_1.png" class="nghe-img" />
+										<div lang="vi">Đầu Bếp</div>
+										<div lang="en">Chef</div>
+										<div lang="cn">美食家</div>
+									</a>
+									<a>
+										<img src="./images/nghe_2.png" class="nghe-img" />
+										<div lang="vi">Nhạc Công</div>
+										<div lang="en">Musician</div>
+										<div lang="cn">乐师</div>
+									</a>
+									<a>
+										<img src="./images/nghe_3.png" class="nghe-img" />
+										<div lang="vi">Thiết Kế</div>
+										<div lang="en">Stylist</div>
+										<div lang="cn">造型师</div>
+									</a>
+									<a>
+										<img src="./images/nghe_4.png" class="nghe-img" />
+										<div lang="vi">Hiệp Đạo</div>
+										<div lang="en">Thief</div>
+										<div lang="cn">侠盗</div>
+									</a>
+									<a>
+										<img src="./images/nghe_5.png" class="nghe-img" />
+										<div lang="vi">Vũ Công</div>
+										<div lang="en">Dancer</div>
+										<div lang="cn">舞者</div>
+									</a>
+								</div>
+								<div id="mon-container">
+									<img src="./images/mon_bg.jpg" class="lazyload bg-img" />
+									<div lang="vi" class="sulan-title">MÔN PHÁI</div>
+									<div lang="en" class="sulan-title">CLASSES</div>
+									<div lang="cn" class="sulan-title">门派</div>
+								
+									<a>
+										<img src="./images/mon_1.png" class="mon-img" />
+										<div lang="vi">Quang Nhẫn</div>
+										<div lang="en">Blademaster</div>
+										<div lang="cn">光刃</div>
+									</a>
+									<a>
+										<img src="./images/mon_2.png" class="mon-img" />
+										<div lang="vi">Ngọc Hư</div>
+										<div lang="en">Swordmage</div>
+										<div lang="cn">玉虚</div>
+									</a>
+									<a>
+										<img src="./images/mon_3.png" class="mon-img" />
+										<div lang="vi">Linh Lung</div>
+										<div lang="en">Spirit Shaper</div>
+										<div lang="cn">灵珑</div>
+									</a>
+									<a>
+										<img src="./images/mon_4.png" class="mon-img" />
+										<div lang="vi">Thánh Đường</div>
+										<div lang="en">Paladin</div>
+										<div lang="cn">圣骑士</div>
+									</a>
+									<a>
+										<img src="./images/mon_5.png" class="mon-img" />
+										<div lang="vi">Lưu Quang</div>
+										<div lang="en">Occultist</div>
+										<div lang="cn">流光</div>
+									</a>
+								</div>
+								<div id="guide-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="./images/guide_1.png" class="lazyload bg-img" />
+											<div class="sulan-slide-text-container">
+												<div lang="vi" class="sulan-slide-small-text">HƯỚNG DẪN</div>
+												<div lang="vi" class="sulan-slide-large-text">NGÀY 1</div>
+												<div lang="en" class="sulan-slide-small-text">GAME GUIDELINE</div>
+												<div lang="en" class="sulan-slide-large-text">DAY 1</div>
+												<div lang="cn" class="sulan-slide-small-text">游戏指引</div>
+												<div lang="cn" class="sulan-slide-large-text">第二天</div>
+											</div>
+											<div class="guide-hover-container">
+												<div class="see-more" lang="vi">Xem Thêm</div>
+												<div class="see-more" lang="en">See more</div>
+												<div class="see-more" lang="cn">更多</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="./images/guide_2.png" class="lazyload bg-img" />
+											<div class="sulan-slide-text-container">
+												<div lang="vi" class="sulan-slide-small-text">HƯỚNG DẪN</div>
+												<div lang="vi" class="sulan-slide-large-text">NGÀY 2</div>
+												<div lang="en" class="sulan-slide-small-text">GAME GUIDELINE</div>
+												<div lang="en" class="sulan-slide-large-text">DAY 2</div>
+												<div lang="cn" class="sulan-slide-small-text">游戏指引</div>
+												<div lang="cn" class="sulan-slide-large-text">第二天</div>
+											</div>
+											<div class="guide-hover-container">
+												<div class="see-more" lang="vi">Xem Thêm</div>
+												<div class="see-more" lang="en">See more</div>
+												<div class="see-more" lang="cn">更多</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="./images/guide_3.png" class="lazyload bg-img" />
+											<div class="sulan-slide-text-container">
+												<div lang="vi" class="sulan-slide-small-text">HƯỚNG DẪN</div>
+												<div lang="vi" class="sulan-slide-large-text">NGÀY 3</div>
+												<div lang="en" class="sulan-slide-small-text">GAME GUIDELINE</div>
+												<div lang="en" class="sulan-slide-large-text">DAY 3</div>
+												<div lang="cn" class="sulan-slide-small-text">游戏指引</div>
+												<div lang="cn" class="sulan-slide-large-text">第三天</div>
+											</div>
+											<div class="guide-hover-container">
+												<div class="see-more" lang="vi">Xem Thêm</div>
+												<div class="see-more" lang="en">See more</div>
+												<div class="see-more" lang="cn">更多</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="./images/guide_1.png" class="lazyload bg-img" />
+											<div class="sulan-slide-text-container">
+												<div lang="vi" class="sulan-slide-small-text">HƯỚNG DẪN</div>
+												<div lang="vi" class="sulan-slide-large-text">NGÀY 4</div>
+												<div lang="en" class="sulan-slide-small-text">GAME GUIDELINE</div>
+												<div lang="en" class="sulan-slide-large-text">DAY 4</div>
+												<div lang="cn" class="sulan-slide-small-text">游戏指引</div>
+												<div lang="cn" class="sulan-slide-large-text">第二天</div>
+											</div>
+											<div class="guide-hover-container">
+												<div class="see-more" lang="vi">Xem Thêm</div>
+												<div class="see-more" lang="en">See more</div>
+												<div class="see-more" lang="cn">更多</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="./images/guide_2.png" class="lazyload bg-img" />
+											<div class="sulan-slide-text-container">
+												<div lang="vi" class="sulan-slide-small-text">HƯỚNG DẪN</div>
+												<div lang="vi" class="sulan-slide-large-text">NGÀY 5</div>
+												<div lang="en" class="sulan-slide-small-text">GAME GUIDELINE</div>
+												<div lang="en" class="sulan-slide-large-text">DAY 5</div>
+												<div lang="cn" class="sulan-slide-small-text">游戏指引</div>
+												<div lang="cn" class="sulan-slide-large-text">第二天</div>
+											</div>
+											<div class="guide-hover-container">
+												<div class="see-more" lang="vi">Xem Thêm</div>
+												<div class="see-more" lang="en">See more</div>
+												<div class="see-more" lang="cn">更多</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section id="nha-tham-hiem-so-cap" hidden>
+								<div id="beginner-news-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="beginner-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination" id="beginner-news-pagination"></div>
+							</section>
+							<section id="nha-tham-hiem-cao-cap" hidden>
+								<div id="advance-news-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="advance-news news">
+												<img src="./images/thumbnail.png" class="news-image"/>
+												<div class="content-container">
+													<h2>Revelation has already set an official</h2>
+													<p>
+														After many days of waiting, finally, Revelation has already set an official launch day of
+														August 10, 2022!
+													</p>
+													<div class="news-info-container">
+														<span>Tin tức hot</span>
+														<span class="vertical-sep"></span>
+														<div>15h trước</div>
+														<span class="vertical-sep"></span>
+														<div>Tác giả: Tiểu Dụ</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination" id="advance-news-pagination"></div>
+							</section>
+							<section id="news-detail" hidden>
+								<div id="news-detail-first-block">
+									<button>
+										<div lang="vi">Quay Lại</div>
+										<div lang="en">Back</div>
+										<div lang="cn">回去</div>
+									</button>
+									<h2>Open Beta Announcement</h2>
+								</div>
+								<div class="horizontal-sep"></div>
+								<div id="news-detail-second-block">
+									<div><span style="color: red">Tin tức hot</span><span class="vertical-sep"></span>15h trước</div>
+									<div>Tác giả: <span style="color: rgb(108, 89, 204)">Tiểu Dụ</span></div>
+								</div>
+								<article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum sint, consequatur aliquid aliquam quibusdam ipsum. Quod assumenda eos magni exercitationem, quae pariatur quo repellat quos vero qui beatae ipsam culpa distinctio illum eum dolor consectetur nihil mollitia perferendis ut voluptatum eveniet nisi! Sint et facilis enim. Dolorum ullam voluptate corrupti dolorem, harum nemo! Tempore incidunt provident voluptatibus eos quis dolor expedita aliquid iure odit unde possimus magnam deserunt necessitatibus, atque veniam quod mollitia optio rem reiciendis minima. Ea ab voluptas blanditiis quam deleniti eveniet sed officia mollitia ut voluptatibus. Quia, dolorem est quas, porro fugiat, fuga architecto praesentium tempore dicta nobis sed sint id. Earum deserunt, veniam eligendi commodi nam odio voluptatem sed quod placeat ex reprehenderit consequuntur aliquid. Quidem alias consequuntur quae ab sit quod iste dolorem molestiae expedita ut laudantium explicabo nisi aperiam, voluptatibus cum natus quasi doloribus, iusto tempora, quisquam consequatur molestias corporis assumenda! Est sunt deleniti rem provident consequuntur voluptatibus soluta temporibus hic eius, nisi accusantium magni illo deserunt ipsa? Eos hic eius debitis nisi ratione excepturi eveniet, ad quidem qui, amet illo possimus vel vitae accusamus. Aliquid, veniam accusantium. Dolorem eveniet vero, animi quae iste ut minima eum odit molestias, harum sequi voluptatibus accusantium iusto beatae amet, ea consequatur libero. Ipsam eveniet voluptate ab soluta iste, ea debitis eum, temporibus vel earum velit itaque vitae nesciunt quas excepturi pariatur. Quis voluptate officia quod harum reprehenderit dolorem eveniet. Nostrum id quasi eos pariatur at neque laborum, maiores dolore quisquam repellat ex fuga, facere incidunt. Minus explicabo assumenda optio voluptate earum. Architecto expedita nesciunt dolorem sint error earum recusandae? Accusamus culpa ut, aliquid nulla blanditiis asperiores, vel ipsa eligendi laborum distinctio qui soluta aut laudantium expedita eius explicabo totam. Rem accusamus facere vero enim dolorum voluptas. Aliquam voluptatem numquam, fuga iusto quas reprehenderit ea deleniti architecto soluta ab ut! Illo esse excepturi nisi cumque nulla expedita voluptates pariatur odit aspernatur saepe nemo, quas nostrum, accusamus mollitia ratione recusandae beatae necessitatibus! Molestias ea neque dolore, laudantium laboriosam quia sequi unde dolor, placeat quisquam doloremque, omnis reiciendis voluptatem nihil officiis eum. Repudiandae fugiat itaque eaque rerum suscipit magni tenetur, optio voluptatum officia dignissimos culpa ad fugit, adipisci qui laudantium ab consequatur reprehenderit. Nihil dolor totam tenetur, cumque molestiae maiores natus officiis autem quas esse voluptate optio mollitia ipsa maxime perspiciatis laudantium quam atque, quidem dolorem reprehenderit a! Deserunt officiis libero, eligendi earum est odit consequatur vel dolores et provident, cum beatae nulla numquam modi saepe quia totam itaque repellendus laborum illo iure corrupti. Deserunt ipsum dicta eius totam quod hic rem quibusdam facilis sequi. Totam, eligendi? Expedita, repellat consequatur, repudiandae laudantium fugit quia accusamus, atque necessitatibus id iusto excepturi assumenda quasi rerum eaque natus? Impedit expedita eveniet aut voluptates odit quae cupiditate. Voluptate, ratione consequuntur fuga cupiditate eum assumenda ab culpa labore ducimus atque. Est, sed quo! Eius perferendis soluta quaerat eveniet provident temporibus, necessitatibus quidem omnis porro possimus veritatis deleniti doloribus dolor error facere aperiam, repellendus dolore nisi numquam incidunt modi hic, nulla totam dicta. Reprehenderit qui ipsam eum deserunt asperiores temporibus cumque cupiditate? Distinctio quaerat maxime quasi iusto accusantium fuga dolorum ducimus sequi dicta quo, nulla velit molestiae possimus totam. Accusantium quas necessitatibus adipisci. Voluptatum fugiat excepturi culpa ullam non exercitationem nemo nulla commodi quaerat dolor. Pariatur repellendus adipisci nemo quaerat doloremque consequuntur corporis ducimus cumque, quia asperiores at, in beatae accusantium nostrum! Numquam reiciendis ipsam consequatur corporis nobis, exercitationem quos eaque ipsum eum sapiente vitae earum officia vel. Totam tempora eaque maxime corporis consequatur magni obcaecati magnam ex nihil aliquam a distinctio unde exercitationem vitae atque placeat nemo laborum sunt, consectetur rerum velit vel! Cum numquam id quos a ipsam quis rerum soluta asperiores suscipit possimus expedita repellendus nihil mollitia sed voluptate molestias ullam, temporibus nulla illum dignissimos explicabo laborum nam sequi inventore? Omnis earum aut ab laboriosam culpa sunt quam sint fugiat neque quos similique laudantium, inventore dolore, dolorem voluptatum explicabo delectus placeat. Porro, dignissimos a minus id nam accusantium vitae ad quod numquam dolore exercitationem eos? Sunt harum eius iste tempora obcaecati ullam est voluptate qui provident cum unde, atque ut enim nisi et illum corrupti, saepe error! Tempora, maxime quis. Et ipsam vitae perspiciatis commodi deleniti tempora inventore modi. Quis enim vero beatae unde velit! Laboriosam cum, fugiat accusantium ipsa pariatur cupiditate rem eligendi ipsum? Explicabo repellendus magni animi a eos iste, quis minima maxime quia dolor magnam praesentium libero nulla doloremque iure placeat quam aspernatur mollitia velit nemo labore, voluptatem blanditiis fugit repudiandae? Dolorem temporibus esse incidunt, et ea eveniet. Beatae accusamus neque quasi officia dolorum tenetur suscipit, velit deleniti magni vitae illum molestias harum rerum, adipisci molestiae facilis dignissimos! Maiores veritatis aut rerum eligendi obcaecati recusandae architecto dolorum quam, necessitatibus distinctio natus, perspiciatis ad, tenetur voluptate veniam id accusamus laborum? Minima in, eveniet, ducimus repudiandae minus molestias nulla rem recusandae ullam dicta excepturi ea a pariatur ipsum. Repellat voluptates esse labore dolore nesciunt. Quo pariatur molestias sed laudantium eligendi impedit eveniet in saepe iusto! Id culpa ipsa aperiam iste. Error neque modi consequatur enim vero aut veniam, amet saepe tempora officiis, non praesentium totam rem harum provident deleniti soluta deserunt eius itaque eveniet distinctio fuga repellendus magni possimus? Quibusdam saepe cumque reiciendis sequi optio voluptatibus consequatur, incidunt qui necessitatibus ducimus magnam ipsum rerum nisi odio. Voluptatibus consequuntur illo incidunt placeat cum tempora iure voluptatem vero nihil aliquam beatae atque corrupti, at temporibus eum modi facilis maxime iusto? Maiores hic minima vitae nulla. Tempore eum animi pariatur accusantium at illo blanditiis iste rem! Veritatis voluptatem amet, nesciunt aperiam sit porro iure atque cupiditate quod eius ut nemo fugiat quae fuga facere beatae sed quisquam vitae placeat nisi unde minima provident aliquam eveniet. Ea laudantium quo maiores sit, totam dolorum expedita quaerat necessitatibus excepturi cumque placeat quam similique veritatis consequuntur culpa! Doloremque quibusdam vero atque culpa deserunt ducimus soluta sequi quaerat cum saepe veniam sapiente ratione dolore sed architecto aperiam quidem quo amet quos error, iusto blanditiis! Blanditiis, magnam. Officiis, placeat modi sapiente, minus impedit quae cumque neque libero nobis laboriosam nulla?</article>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="vertical-overlay" hidden>
+			<div lang="vi">Quay ngang điện thoại để có trải nghiệm tốt nhất</div>
+			<img src="./images/rotation.png" class="lazyload"/>
+		</div>
+	</body>
+</html>

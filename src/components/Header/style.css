@@ -1,0 +1,116 @@
+header {
+	width: 1920px;
+	height: 139px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: philosopher-bold;
+}
+
+#logo {
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+
+#language-select-container {
+	font-family: barlow-semi;
+	position: absolute;
+	right: 60px;
+	top: 32px;
+	z-index: 100;
+}
+
+#select-language-button {
+	background-image: url("../../assets/select_language_button.png");
+	width: 203px;
+	height: 57px;
+	border: none;
+	background-color: transparent;
+	color: rgb(178, 212, 241);
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+#select-language-button [lang="cn"] {
+	font-family: barlow-bold;
+	font-size: 32px;
+}
+
+#language-dropdown {
+	background-image: url("../../assets/select_language_dropdown.png");
+	list-style-type: none;
+	width: 205px;
+	height: 342px;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+	padding-top: 35px;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#language-dropdown li {
+	box-sizing: border-box;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	padding: 10px 30px;
+	cursor: pointer;
+	position: relative;
+}
+
+#language-dropdown li:hover {
+	background-image: url("../../assets/language_hover.png");
+	background-size: 100% 100%;
+}
+
+#language-dropdown li[selected]::before {
+	content: "";
+	background-image: url("../../assets/current_language_indicator.png");
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	translate: 0 -50%;
+	filter: contrast(50%);
+}
+
+nav #menu-container {
+	width: 1282px;
+	height: 100%;
+	position: absolute;
+	left: 320px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+#menu-container div {
+	display: flex;
+	box-sizing: border-box;
+	padding-inline: 52px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 28px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	width: 318px;
+	height: 134px;
+	flex-shrink: 0;
+}
+
+#menu-container div[active="true"]::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../../assets/header_hover.png");
+	width: 318px;
+	height: 134px;
+}

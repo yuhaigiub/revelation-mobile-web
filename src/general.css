@@ -1,0 +1,77 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: fit-content;
+	overflow-x: hidden;
+}
+
+#outer-root {
+	width: fit-content;
+	overflow: hidden;
+}
+
+#root {
+	transform-origin: top left;
+	overflow: hidden;
+	width: 1920px;
+	outline: 1px solid red;
+}
+
+.bg-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.news {
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: barlow-bold;
+	src: url("./assets/fonts/Barlow-Bold.ttf");
+}
+
+@font-face {
+	font-family: barlow-medium;
+	src: url("./assets/fonts/Barlow-Medium.ttf");
+}
+
+@font-face {
+	font-family: barlow-semi;
+	src: url("./assets/fonts/Barlow-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: barlow-light;
+	src: url("./assets/fonts/Barlow-Light.ttf");
+}
+
+@font-face {
+	font-family: barlow-regular;
+	src: url("./assets/fonts/Barlow-Regular.ttf");
+}
+
+@font-face {
+	font-family: chinese-1;
+	src: url("./assets/fonts/cn_1.ttf");
+}
+
+@font-face {
+	font-family: chinese-2;
+	src: url("./assets/fonts/cn_2.ttf");
+}
+
+@font-face {
+	font-family: philosopher-bold;
+	src: url("./assets/fonts/Philosopher-Bold.ttf");
+}
+
+@font-face {
+	font-family: svn-wylie;
+	src: url("./assets/fonts/svn-sylie.otf");
+}
