@@ -50,19 +50,19 @@
 	height: 111px;
 	position: relative;
 	margin-top: 15px;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 72px;
-	padding-left: 235px;
-	padding-right: 60px;
+	padding-left: 190px;
+	font-size: 27px;
+}
+
+#mon-swiper {
+	position: relative;
+	z-index: 2;
+	width: 750px;
+	overflow: hidden;
 }
 
 #mon-container *[lang="cn"] {
 	font-family: chinese-1;
-}
-
-#mon-container a *[lang="cn"] {
-	font-size: 22px;
 }
 
 :is(#mon-container, #nghe-container) a {
@@ -73,8 +73,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 4px;
 	text-align: center;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	padding-top: 5px;
 }
 
 .mon-img,
@@ -106,19 +108,20 @@
 	width: 941px;
 	height: 111px;
 	position: relative;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 64px;
-	padding-left: 230px;
-	padding-right: 60px;
+	margin-top: 15px;
+	padding-left: 190px;
+	font-size: 27px;
+}
+
+#nghe-swiper {
+	position: relative;
+	z-index: 2;
+	width: 750px;
+	overflow: hidden;
 }
 
 #nghe-container *[lang="cn"] {
 	font-family: chinese-1;
-}
-
-#nghe-container a *[lang="cn"] {
-	font-size: 22px;
 }
 
 #guide-container {
@@ -158,7 +161,6 @@
 }
 
 .guide-hover-container {
-	scale: 1 0;
 	background-image: url("./assets/guide_hover.png");
 	width: 298px;
 	height: 374px;
@@ -166,13 +168,8 @@
 	right: 0;
 	bottom: 0;
 	z-index: 2;
-	transition: scale 300ms linear;
-	transform-origin: center bottom;
 }
 
-.swiper-slide:hover .guide-hover-container {
-	scale: 1 1;
-}
 .swiper-slide img {
 	transition-property: opacity;
 	transition-delay: 150ms;
@@ -190,4 +187,39 @@
 	bottom: 25px;
 	left: 50%;
 	translate: -50% 0;
+}
+
+.guide-link-container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: absolute;
+	left: 20px;
+	top: 30px;
+	height: 250px;
+	width: 260px;
+	box-sizing: border-box;
+	padding-right: 5px;
+	overflow-y: scroll;
+}
+
+.guide-link-container a {
+	color: rgb(88, 100, 175);
+	font-family: barlow-medium;
+	font-size: 26px;
+	position: relative;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.guide-link-container a::before {
+	content: "";
+	background-image: url("./assets/guide_hover_bullet.png");
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	left: 0;
 }

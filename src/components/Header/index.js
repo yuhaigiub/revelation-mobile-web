@@ -1,4 +1,5 @@
 export default function Header() {
+	let isOpenNews = false;
 	let sections = [
 		{ left: $("#sulan-academy-left-blue"), right: $("#hoc-vien-sulan") },
 		{ left: "", right: "" },
@@ -19,6 +20,10 @@ export default function Header() {
 			sections[active].right.hide();
 			sections[i].left.show();
 			sections[i].right.show();
+			if (isOpenNews && active !== i) {
+				isOpenNews === false;
+				newsDetail.hide();
+			}
 			active = i;
 		});
 	});
@@ -30,6 +35,34 @@ export default function Header() {
 		$(element).on("click", function (event) {
 			sections[active].right.hide();
 			newsDetail.show();
+			isOpenNews = true;
+		});
+	});
+
+	const monButtons = $("#mon-swiper a");
+	const ngheButtons = $("#nghe-swiper a");
+	const guideLinks = $(".guide-link-container a");
+	monButtons.each(function (index, element) {
+		$(element).on("click", function () {
+			sections[active].right.hide();
+			newsDetail.show();
+			isOpenNews = true;
+		});
+	});
+
+	ngheButtons.each(function (index, element) {
+		$(element).on("click", function () {
+			sections[active].right.hide();
+			newsDetail.show();
+			isOpenNews = true;
+		});
+	});
+
+	guideLinks.each(function (index, element) {
+		$(element).on("click", function () {
+			sections[active].right.hide();
+			newsDetail.show();
+			isOpenNews = true;
 		});
 	});
 
@@ -38,6 +71,7 @@ export default function Header() {
 	newsBackButton.on("click", function (event) {
 		newsDetail.hide();
 		sections[active].right.show();
+		isOpenNews = false;
 	});
 
 	// language

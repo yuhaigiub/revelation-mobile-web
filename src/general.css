@@ -75,3 +75,7 @@ body {
 	font-family: svn-wylie;
 	src: url("./assets/fonts/svn-sylie.otf");
 }
+
+a {
+	cursor: pointer;
+}
