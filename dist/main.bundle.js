@@ -11204,7 +11204,7 @@ window.addEventListener("resize", scaleRoot);
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "0cb1ab864072bf9e0991.ttf";
+module.exports = __webpack_require__.p + "fonts/Barlow-Bold.ttf";
 
 /***/ }),
 
@@ -11215,7 +11215,7 @@ module.exports = __webpack_require__.p + "0cb1ab864072bf9e0991.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "19f244ecb11218b9a7de.ttf";
+module.exports = __webpack_require__.p + "fonts/Barlow-Light.ttf";
 
 /***/ }),
 
@@ -11226,7 +11226,7 @@ module.exports = __webpack_require__.p + "19f244ecb11218b9a7de.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "d4afdc134fc10b739bab.ttf";
+module.exports = __webpack_require__.p + "fonts/Barlow-Medium.ttf";
 
 /***/ }),
 
@@ -11237,7 +11237,7 @@ module.exports = __webpack_require__.p + "d4afdc134fc10b739bab.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "e7eb634d040a6f384033.ttf";
+module.exports = __webpack_require__.p + "fonts/Barlow-Regular.ttf";
 
 /***/ }),
 
@@ -11248,7 +11248,7 @@ module.exports = __webpack_require__.p + "e7eb634d040a6f384033.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "8247eaeb0799c0acafc6.ttf";
+module.exports = __webpack_require__.p + "fonts/Barlow-SemiBold.ttf";
 
 /***/ }),
 
@@ -11259,7 +11259,7 @@ module.exports = __webpack_require__.p + "8247eaeb0799c0acafc6.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "7e98a8743136a6828ccf.ttf";
+module.exports = __webpack_require__.p + "fonts/Philosopher-Bold.ttf";
 
 /***/ }),
 
@@ -11270,7 +11270,7 @@ module.exports = __webpack_require__.p + "7e98a8743136a6828ccf.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "76c1cf459fedda3cd7da.ttf";
+module.exports = __webpack_require__.p + "fonts/cn_1.ttf";
 
 /***/ }),
 
@@ -11281,7 +11281,7 @@ module.exports = __webpack_require__.p + "76c1cf459fedda3cd7da.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "187923e55d72bd9a2cc7.ttf";
+module.exports = __webpack_require__.p + "fonts/cn_2.ttf";
 
 /***/ }),
 
@@ -11292,7 +11292,7 @@ module.exports = __webpack_require__.p + "187923e55d72bd9a2cc7.ttf";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "d3c7de18acf98c3c8bbf.otf";
+module.exports = __webpack_require__.p + "fonts/svn-sylie.otf";
 
 /***/ }),
 

@@ -63,6 +63,13 @@ module.exports = {
 				},
 			},
 			{
+				test: /\.(ttf|otf)$/,
+				type: "asset/resource",
+				generator: {
+					filename: "fonts/[name][ext]",
+				},
+			},
+			{
 				test: /\.ejs$/,
 				use: ["html-loader", "template-ejs-loader"],
 			},
